@@ -5,15 +5,15 @@ namespace TestSMSApp
 {
     public class SmsSender
     {
-        public const string API_KEY ="3e17d55e";
-        public const string API_SECRET ="daDPyRfZWu1pRWsT";
+        public const string API_KEY ="";
+        public const string API_SECRET ="";
         public static void SendSMS(){
             var vonaClient = GetVonageClient();
             // TODO: Send the sms
             var response = vonaClient.SmsClient.SendAnSms(new Vonage.Messaging.SendSmsRequest()
                     {
-                        To = "18297259060",
-                        From ="FaoSoft",
+                        To = "",
+                        From ="From Title",
                         Text ="Mensaje de prueba...usando vonage API's"
                     }
                 );
